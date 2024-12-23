@@ -3,43 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Widget del Tiempo - Proporción 4:3</title>
+    <title>Widget Elfsight</title>
     <style>
+        /* Estilo para centrar y ajustar el tamaño del widget */
         body {
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100vw;
             height: 100vh;
             background-color: #ffffff; /* Fondo blanco */
         }
         #widget-container {
-            width: 623px; /* Ancho fijo (4 partes) */
-            height: 468px; /* Altura fija (3 partes) */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden; /* Recortar contenido fuera del contenedor */
-            position: relative;
-            background-color: #000; /* Fondo para identificar los bordes */
+            width: 623px; /* Ancho del widget */
+            height: 468px; /* Altura del widget */
         }
-        #widget-container > div {
-            transform: scale(1.66); /* Escalar el widget para llenar el contenedor */
-            transform-origin: center; /* Escalar desde el centro */
-            width: auto; /* Mantener proporción original del widget */
-            height: 280px; /* Mantener proporción original del widget */
+        .elfsight-app-9c8c0caf-b813-4b0c-b037-c3b60dd0ab66 {
+            width: 100%; /* Asegura que el widget ocupe todo el contenedor */
+            height: 100%; /* Asegura que el widget ocupe todo el contenedor */
         }
     </style>
 </head>
 <body>
     <div id="widget-container">
-        <div id="ww_f8c052bdfedc5" v='1.3' loc='id' a='{"t":"horizontal","lang":"es","sl_lpl":1,"ids":["wl145"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>
-            Más previsiones:
-            <a href="https://oneweather.org/es/madrid/25_days/" id="ww_f8c052bdfedc5_u" target="_blank">Tiempo 25 días</a>
-        </div>
-        <script async src="https://app3.weatherwidget.org/js/?id=ww_f8c052bdfedc5"></script>
+        <div class="elfsight-app-9c8c0caf-b813-4b0c-b037-c3b60dd0ab66" data-elfsight-app-lazy></div>
     </div>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
 </body>
 </html>
